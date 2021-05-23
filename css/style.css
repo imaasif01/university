@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+P{
+    margin: 0.75rem 0;
+}
+
+.text-primary{
+    color: orange;
+}
+
+/*navbar*/
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem; /*can be neccessary r not*/
+}
+
+#navbar ul li a:hover{
+    background: orange;
+    border-radius: 5px;
+}
+.l-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.0rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn:hover{
+    background: rgb(247, 192, 92);
+}
+.py-1{padding: 1.5rem 0; }
+.py-2{padding: 2rem 0; }
+.py-3{padding: 3rem 0; }
+
+.p-1{padding: 1.5rem ; }
+.p-2{padding: 2rem ; }
+.p-3{padding: 3rem ; }
+
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: orange;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.btn-dark{
+    color: #fff;
+    background: #333;
+}
+ /* bg dark light */
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-primary{
+    background-color: orange;
+    color: #f4f4f4;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom:#444 dotted 1.2px ;
+}
+
+
+/* header showcase*/
+
+#showcase{
+    background: #333
+    url('../images/university.jpg')
+    no-repeat center center/cover;
+    opacity: 0.9;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /*overlay*/
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 2;
+}
+
+/* about us */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow:hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.m-heading{
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.items {
+    display: flex;
+    padding: 1rem;
+}
+.items{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+.items i {
+    background: orange;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+
+/*services*/
+
+#Services {
+    display: flex;
+}
+
+#Services div {
+    flex: 1;
+}
+
+#Services .Services-img{
+    background: url(../images/bussinesspeople.jpg)
+    no-repeat center center/cover;
+}
+
+/*placments*/
+#Placement .itemsm{
+    display: flex;   
+}
+
+#Placement .itemsm i{
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+.itemsm div{
+     margin-right: 20px;
+     padding: 1px;
+}
+
+#Placement:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*contact*/
+
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact  .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.75rem;
+}
+
+#contact .m-heading{
+    text-align: start;
+}
